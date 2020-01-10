@@ -1,0 +1,29 @@
+Links que podem ser uteis:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide
+https://nodejs.org/en/docs/
+
+Comentarios:
+//comenta uma unica linha
+/*comenta
+  várias 
+  linhas*/
+
+Exemplos para fazer:
+-Chute
+-Forca
+-Jogo da velha
+
+-> A linguagem possui o paradigma de orientacao a objetos
+-> O objeto 'assert' é utilizado para testar condicoes, com o metodo 'equal'
+   ex: assert.equal(7+1, 8)
+-> Operadores: '&&' - AND
+	       '||' - OR
+               '<, <=, ===, !==' - COMPARADORES
+
+-> As variaveis nao possuem tipo fixo
+-> Declaracao:
+	 let x; //declara a variavel x
+	 let y = 3 * 5; //como em C permite inicial a variavel na declaracao
+
+	 const Z = 8; //declara uma constante
+-> Em muitos aspectos é igual a C, por exemplo if e operador ternario 
