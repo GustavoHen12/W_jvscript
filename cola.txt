@@ -1,6 +1,9 @@
 Links que podem ser uteis:
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide
 https://nodejs.org/en/docs/
+https://blog.da2k.com.br/2017/01/25/objetos-referencias-de-valores-em-javascript/ ->referencia x valor
+https://blog.da2k.com.br/2019/01/07/javascript-tudo-sobre-arrow-functions/ ->arrows
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes -> Classes
 
 Comentarios:
 //comenta uma unica linha
@@ -24,6 +27,12 @@ Exemplos para fazer:
 -> Declaracao:
 	 let x; //declara a variavel x
 	 let y = 3 * 5; //como em C permite inicial a variavel na declaracao
-
 	 const Z = 8; //declara uma constante
+
 -> Em muitos aspectos é igual a C, por exemplo if e operador ternario 
+
+-> os tipos primitivos (boolean, string, number) são imutaveis, ou seja, funcionam 
+basicamente como uma constante, quando declaramos, por exemplo
+  let a = 10;
+estamos copiando 10 para a variavel a, ou seja, sempre passamos por valor
+-> os objetos sao mutaveis
