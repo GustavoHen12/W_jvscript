@@ -1,36 +1,50 @@
 const MAX_ERROS = 5;
-
-//passagem por parametro (?)
-function processa_letra(letra, palavra)
-{
-
-}
-
-// --- MAIN ---
-let palavra = "palavra";
 let jogo = {
+    palavra: "palavra",
     try_err: "",
-    try_cor: "",
-    erros: 0, //numero de erros
-    falta: 0 //numero de letras que faltam
+    try_cor: "       ",
+    erros: 0, //numero de tentativas erradas
+    acertos: 0 //numero de letras que conseguiu
 };
 
-jogo.falta = palavra.length;
-while((jogo.falta !== 0) && (erros !== MAX_ERROS))
+//passagem por parametro (?)
+function processa_letra()
 {
-    // le_caracter (?)
-    let acertos = 0;
-    acertos = processa_letra(letra, palavra);//retorna 0 se nao achar nenhuma
-    
-    if(acertos === 0)
+    let letra = document.getElementById("entrada").value; //le o valor da entrada
+    alert("voce digitou mais de um caracter")
+    //verifica se a entrada e valida
+    if (letra.length > 1)
     {
-        jogo.erros++;
-        try_err =  try_err + letra;
+        alert("voce digitou mais de um caracter")
     }
-    else
+    //processa a letra
+    else 
     {
-        jogo.falta = jogo.falta + acertos;
-        try_cor = try_cor + letra;
-    }
-}
+        //coloca em minusculo
+        letra = letra.toLowercase();
+        //vefica se esta na palavra
+        let j = 0;
+        for(let i = 0; i < jogo.palavra.length; i++)
+        {
+            if (jogo.palavra[i] == letra)
+            {
+                jogo.acertos++;
+                jogo.try_cor[i] = letra;
+            }
+            else
+            {
+                j++;
+            }
+        }
 
+        if(i == j)
+        {
+            try_err = try_err + letra;
+            jogo.erros++;
+        }
+
+        verifica_jogo(jogo);
+    }
+
+
+}
