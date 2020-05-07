@@ -1,2 +1,2 @@
 # W_jvscript
-Projetos utilizando javascript
+Algumas coisas que eu fiz para tentar aprender javascript
